@@ -31,11 +31,11 @@ const Home = () => {
   return (
     <div className={Styles.home}>
 
-      <h1>Veja os nossos posts mais recentes</h1>
+      <h1></h1>
       <form className={Styles.search_form} onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Ou busque por tags..."
+          placeholder="Pesquisar no MiniBlog...."
           onChange={(e) => setQuery(e.target.value)}
         />
         <button className="btn btn-dark">Pesquisar</button>

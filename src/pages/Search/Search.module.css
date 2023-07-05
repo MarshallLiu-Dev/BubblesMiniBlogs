@@ -1,8 +1,12 @@
+/* Estilos com responsividade para vários dispositivos */
+
+/* Estilos da seção .search_container */
 .search_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 7rem;
 }
 
 .search_container h1 {
@@ -11,4 +15,23 @@
 
 .search_container p {
   margin-bottom: 30px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+
+  /* Estilos para dispositivos com largura de até 768px */
+  .search_container h1 {
+    font-size: 1.2em;
+    /* Reduzir o tamanho da fonte do título */
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Estilos para dispositivos com largura de até 480px */
+  .search_container h1 {
+    font-size: 1em;
+    /* Reduzir ainda mais o tamanho da fonte do título */
+  }
 }

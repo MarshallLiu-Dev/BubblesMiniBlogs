@@ -1,7 +1,29 @@
+/* Estilos com responsividade para vários dispositivos */
+
+/* Estilos da seção .login */
 .login {
   text-align: center;
 }
 
 .login p {
   color: #aaa;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+
+  /* Estilos para dispositivos com largura de até 768px */
+  .login p {
+    font-size: 0.9em;
+    /* Reduzir o tamanho da fonte dos parágrafos */
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Estilos para dispositivos com largura de até 480px */
+  .login p {
+    font-size: 0.8em;
+    /* Reduzir ainda mais o tamanho da fonte dos parágrafos */
+  }
 }

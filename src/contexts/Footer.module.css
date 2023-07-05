@@ -1,8 +1,22 @@
+/* Estilos com responsividade para vários dispositivos */
+
+/* Estilos da seção .footer */
 .footer {
-  height: 250px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #edf3f6;
 }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  /* Estilos para dispositivos com largura de até 768px */
+  .footer {
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+    padding: 20px; /* Adicionar um espaçamento interno */
+  }
+}
+
+

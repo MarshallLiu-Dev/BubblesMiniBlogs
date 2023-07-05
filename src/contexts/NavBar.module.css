@@ -1,21 +1,39 @@
+/* Estilos com responsividade para vários dispositivos */
 
-.navbar {
+/* Estilos da barra de navegação (.navbar) */
+/* .navbar {
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 10px 0px;
   justify-content: space-between;
   align-items: center;
   padding: 0.5em 2em;
   list-style: none;
+  
+ 
+} */
+
+.navbar {
+  display: flex;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 10px 0px; */
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1)0px -2px 10px 0px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.brand {
-  /* font-size: 1.2em; */
-  font-size: 2.5rem;
+
+.brand img {
+  font-size: 1.5rem;
 }
 
 .brand span {
   font-weight: 900;
   text-transform: uppercase;
+  color: #ff0062;
 }
 
 .links_list {
@@ -32,6 +50,40 @@
 }
 
 .active {
-  background-color: #000;
+  background-color: #ff0062;
   color: #fff;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+
+  /* Estilos para dispositivos com largura de até 768px */
+  .brand img {
+    font-size: 2rem;
+    /* Reduzir o tamanho da fonte do logo */
+  }
+
+  .links_list li a {
+    padding: 0.3em 0.5em;
+    /* Reduzir o padding dos links da lista */
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Estilos para dispositivos com largura de até 480px */
+  .navbar {
+    padding: 0.5em;
+    /* Reduzir o padding da barra de navegação */
+  }
+
+  .brand img {
+    font-size: 1.5rem;
+    /* Reduzir ainda mais o tamanho da fonte do logo */
+  }
+
+  .links_list li a {
+    padding: 0.2em 0.4em;
+    /* Reduzir ainda mais o padding dos links da lista */
+  }
 }

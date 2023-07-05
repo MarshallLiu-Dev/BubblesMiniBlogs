@@ -1,3 +1,6 @@
+/* Estilos com responsividade para vários dispositivos */
+
+/* Estilos da seção .about */
 .about {
   text-align: center;
   display: flex;
@@ -14,4 +17,33 @@
   display: block;
   margin-top: 15px;
   padding: 10px 15px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+
+  /* Estilos para dispositivos com largura de até 768px */
+  .about p {
+    font-size: 0.9em;
+    /* Reduzir o tamanho da fonte dos parágrafos */
+  }
+
+  .about a {
+    padding: 8px 12px;
+    /* Reduzir o espaçamento interno dos links */
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Estilos para dispositivos com largura de até 480px */
+  .about p {
+    font-size: 0.8em;
+    /* Reduzir ainda mais o tamanho da fonte dos parágrafos */
+  }
+
+  .about a {
+    padding: 6px 10px;
+    /* Reduzir ainda mais o espaçamento interno dos links */
+  }
 }

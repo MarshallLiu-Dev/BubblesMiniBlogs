@@ -15,7 +15,8 @@ const NavBar = () => {
   return (
       <nav className={styles.navbar}>
         <NavLink className={styles.brand} to='/'>
-        <span><img src="./sunglass.png" alt="" className={styles.brand} /> Bubbles</span> Mini <span> Blogs </span>
+        {/* <span><img src="./sunglass.png" alt="" className={styles.brand} /> Bubbles</span> Mini <span> Blogs </span> */}
+        <span><img src="" alt="" className={styles.brand} /> Bubbles</span> Mini <span> Blogs </span>
         </NavLink> 
           <ul className={styles.links_list}>
             <li>

@@ -1,7 +1,29 @@
+/* Estilos com responsividade para vários dispositivos */
+
+/* Estilos da seção .register */
 .register {
   text-align: center;
 }
 
 .register p {
   color: #aaa;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+
+  /* Estilos para dispositivos com largura de até 768px */
+  .register p {
+    font-size: 0.9em;
+    /* Reduzir o tamanho da fonte dos parágrafos */
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Estilos para dispositivos com largura de até 480px */
+  .register p {
+    font-size: 0.8em;
+    /* Reduzir ainda mais o tamanho da fonte dos parágrafos */
+  }
 }

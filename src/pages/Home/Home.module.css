@@ -1,23 +1,30 @@
+/* Estilos com responsividade para vários dispositivos */
+
+/* Estilos da seção .home */
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 7rem;
 }
 
+/* Estilos do formulário de pesquisa */
 .search_form {
   max-width: 100%;
   width: 60%;
   display: flex;
   justify-content: center;
-  margin-bottom: 2em;
+  margin-bottom: 1.5rem;
 }
 
 .search_form input {
   margin-right: 10px;
-  width: 50%;
+  width: 100%;
+  /* Alterado para ocupar a largura total do contêiner */
 }
 
+/* Estilos para quando não há posts */
 .noposts {
   text-align: center;
 }
@@ -30,8 +37,10 @@
   padding: 10px 25px;
 }
 
+/* Estilos dos botões */
 .btn {
-  background-color: #1a8918;
+  background-color: #ff0062;
+    border-radius: 0;;
   color: #fff;
   text-align: center;
   cursor: pointer;
@@ -44,15 +53,17 @@
 }
 
 .btn.btn-dark {
-  background-color: #000;
+  background-color: #ff0062;
   border-radius: 0;
 }
 
 .btn.btn-outline {
   background-color: transparent;
   border-radius: 0;
-  color: #000;
-  border: 1px solid #000;
+  color: #ff0062;
+    border-radius: 0;;
+  border: 1px solid #ff0062;
+    border-radius: 0;;
   padding: 7px 30px;
 }
 
@@ -62,9 +73,39 @@
 }
 
 .btn.btn-outline:hover {
-  background-color: #000;
+  background-color: #ff0062;
+    border-radius: 0;;
 }
 
 .btn.btn-danger:hover {
   background-color: #dc3545;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+
+  /* Estilos para dispositivos com largura de até 768px */
+  .search_form {
+    width: 80%;
+    /* Reduzir a largura do formulário de pesquisa */
+  }
+
+  .search_form input {
+    width: 70%;
+    /* Reduzir a largura do campo de input de pesquisa */
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Estilos para dispositivos com largura de até 480px */
+  .search_form {
+    width: 90%;
+    /* Reduzir ainda mais a largura do formulário de pesquisa */
+  }
+
+  .search_form input {
+    width: 80%;
+    /* Reduzir ainda mais a largura do campo de input de pesquisa */
+  }
 }

@@ -1,9 +1,13 @@
+/* Estilos com responsividade para vários dispositivos */
+
+/* Estilos da seção .dashboard */
 .dashboard {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 7rem;
 }
 
 .dashboard h2 {
@@ -56,4 +60,69 @@
   height: 30px;
   width: 100px;
   font-size: 0.7em;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+
+  /* Estilos para dispositivos com largura de até 768px */
+  .dashboard h2 {
+    font-size: 1.8em;
+    /* Reduzir o tamanho da fonte do título */
+  }
+
+  .dashboard p {
+    font-size: 0.9em;
+    /* Reduzir o tamanho da fonte dos parágrafos */
+  }
+
+  .post_header,
+  .post_row {
+    width: 90%;
+    /* Ajustar a largura para melhor se encaixar em dispositivos menores */
+    padding: 8px;
+    /* Reduzir o espaçamento interno */
+  }
+
+  .post_row button,
+  .post_row a {
+    height: 25px;
+    /* Reduzir a altura dos botões e links */
+    width: 90px;
+    /* Reduzir a largura dos botões e links */
+    font-size: 0.6em;
+    /* Reduzir o tamanho da fonte dos botões e links */
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Estilos para dispositivos com largura de até 480px */
+  .dashboard h2 {
+    font-size: 1.5em;
+    /* Reduzir ainda mais o tamanho da fonte do título */
+  }
+
+  .dashboard p {
+    font-size: 0.8em;
+    /* Reduzir ainda mais o tamanho da fonte dos parágrafos */
+  }
+
+  .post_header,
+  .post_row {
+    width: 100%;
+    /* Ajustar a largura para preencher a tela inteira */
+    padding: 6px;
+    /* Reduzir ainda mais o espaçamento interno */
+  }
+
+  .post_row button,
+  .post_row a {
+    height: 20px;
+    /* Reduzir ainda mais a altura dos botões e links */
+    width: 80px;
+    /* Reduzir ainda mais a largura dos botões e links */
+    font-size: 0.5em;
+    /* Reduzir ainda mais o tamanho da fonte dos botões e links */
+  }
 }

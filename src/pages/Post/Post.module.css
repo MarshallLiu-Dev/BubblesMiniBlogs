@@ -1,0 +1,49 @@
+/* Estilos com responsividade para vários dispositivos */
+
+/* Estilos do contêiner de posts (.post_container) */
+.post_container {
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.post_container h3 {
+  margin-bottom: 0.2em;
+}
+
+.post_container .tags {
+  display: flex;
+  justify-content: center;
+}
+
+.tags p {
+  margin-right: 1em;
+}
+
+.tags span {
+  font-weight: bold;
+}
+
+.post_container img {
+  width: 30%;
+  height: auto;
+  /* Alterado para altura automática para manter a proporção */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+
+  /* Estilos para dispositivos com largura de até 768px */
+  .post_container img {
+    width: 80%;
+    /* Reduzir a largura da imagem */
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Estilos para dispositivos com largura de até 480px */
+  .post_container img {
+    width: 100%;
+    /* Reduzir ainda mais a largura da imagem */
+  }
+}
